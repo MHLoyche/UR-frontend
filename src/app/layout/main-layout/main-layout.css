@@ -1,6 +1,7 @@
 .layout-shell {
 	display: flex;
 	min-height: 100vh;
+	background: #f8fafc;
 }
 
 .layout-content {
@@ -13,5 +14,5 @@
 .page-content {
 	flex: 1;
 	padding: 1.5rem;
-	background: #f3f4f6;
+	background: #f8fafc;
 }

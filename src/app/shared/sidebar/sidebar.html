@@ -1,1 +1,14 @@
-<p>sidebar works!</p>
+<aside class="sidebar">
+	<div class="sidebar-brand">
+		<span class="sidebar-title">Udlånsregistrering</span>
+	</div>
+
+	<nav class="sidebar-nav" aria-label="Primary">
+		<a routerLink="/dashboard" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
+			Dashboard
+		</a>
+		<a routerLink="/loans" routerLinkActive="is-active">Lån</a>
+		<a routerLink="/inventory" routerLinkActive="is-active">Inventory</a>
+		<a routerLink="/students" routerLinkActive="is-active">Students</a>
+	</nav>
+</aside>
