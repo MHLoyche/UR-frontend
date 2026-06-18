@@ -1,18 +1,35 @@
 .layout-shell {
-	display: flex;
-	min-height: 100vh;
-	background: #f8fafc;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.layout-body {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -120px;
+  position: relative;
+  z-index: 2;
+}
+
+app-header {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+app-sidebar {
+  flex: 0 0 240px;
+  position: relative;
+  z-index: 3;
 }
 
 .layout-content {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	min-width: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .page-content {
-	flex: 1;
-	padding: 1.5rem;
-	background: #f8fafc;
+  min-height: calc(100vh - 120px);
+  padding: 1.5rem;
+  background: #f8fafc;
 }
