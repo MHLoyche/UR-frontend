@@ -8,7 +8,10 @@ export const routes: Routes = [
         component: MainLayout,
         children: [
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-            { path: 'dashboard', loadComponent: () => import('./pages/dashboard/dashboard').then(m => m.Dashboard) }
+            { path: 'dashboard', loadComponent: () => import('./pages/dashboard/dashboard').then(m => m.Dashboard) },
+            { path: 'loans', loadComponent: () => import('./pages/loans/loans').then(m => m.Loans) },
+            { path: 'inventory', loadComponent: () => import('./pages/inventory/inventory').then(m => m.Inventory) },
+            { path: 'students', loadComponent: () => import('./pages/students/students').then(m => m.Students) }
         ]
     }
 ];
