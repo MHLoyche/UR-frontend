@@ -4,7 +4,27 @@
         <button class="add-loan-btn">Add Loan</button>
     </div>
 
-    <input class="search-input" type="text" placeholder="Search loans..."/>
+	<div class="search-container">
+		<input class="search-input" type="text" placeholder="Search loans..."/>
+
+		<div class="filter-group">
+			<label for="returned-select">Return Filter</label>
+			<select id="returned-select" class="returned-select">
+				<option value="">All</option>
+				<option value="overdue">Yes</option>
+				<option value="returned">No</option>
+			</select>
+		</div>
+
+		<div class="filter-group">
+			<label for="overdue-select">Overdue Filter</label>
+			<select id="overdue-select" class="overdue-select">
+				<option value="">All</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+		</div>
+	</div>
 
 	<table class="loans-table" *ngIf="loans$ | async as loans; else loading">
 		<thead>

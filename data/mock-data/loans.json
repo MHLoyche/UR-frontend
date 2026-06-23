@@ -47,6 +47,14 @@
 			"udlaansdato": "2026-06-06",
 			"udloebsdato": "2026-06-20",
             "afleveret": false
+		},
+        {
+			"elevnummer": "20260007",
+			"computernummer": "PC-0728",
+			"registrationsnummer": "N/A",
+			"udlaansdato": "2026-06-06",
+			"udloebsdato": "2027-06-20",
+            "afleveret": false
 		}
 	]
 }
