@@ -26,6 +26,51 @@
         "cprNummer": "091208-9012",
         "email": "sofie.hansen@skole.dk",
         "stamklasse": "3.A"
+        },
+        {
+        "elevnummer": "20260004",
+        "navn": "Noah Pedersen",
+        "adresse": "Nørrebrogade 19",
+        "postnummerOgBy": "2200 København N",
+        "cprNummer": "170709-3344",
+        "email": "noah.pedersen@skole.dk",
+        "stamklasse": "1.C"
+        },
+        {
+        "elevnummer": "20260005",
+        "navn": "Freja Madsen",
+        "adresse": "Valby Langgade 61",
+        "postnummerOgBy": "2500 Valby",
+        "cprNummer": "030610-7788",
+        "email": "freja.madsen@skole.dk",
+        "stamklasse": "1.A"
+        },
+        {
+        "elevnummer": "20260006",
+        "navn": "William Sørensen",
+        "adresse": "Jagtvej 126",
+        "postnummerOgBy": "2200 København N",
+        "cprNummer": "281104-5566",
+        "email": "william.sorensen@skole.dk",
+        "stamklasse": "2.C"
+        },
+        {
+        "elevnummer": "20260007",
+        "navn": "Ida Larsen",
+        "adresse": "Lyngby Hovedgade 14",
+        "postnummerOgBy": "2800 Kongens Lyngby",
+        "cprNummer": "120905-8899",
+        "email": "ida.larsen@skole.dk",
+        "stamklasse": "3.B"
+        },
+        {
+        "elevnummer": "20260008",
+        "navn": "Oliver Rasmussen",
+        "adresse": "H.C. Andersens Boulevard 9",
+        "postnummerOgBy": "1553 København V",
+        "cprNummer": "241006-1122",
+        "email": "oliver.rasmussen@skole.dk",
+        "stamklasse": "2.A"
         }
   ]
 }
