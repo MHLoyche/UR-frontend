@@ -1,1 +1,27 @@
-<p>inventory works!</p>
+<section class="inventory">
+  <h1>Inventory</h1>
+
+  <table class="inventory-table" *ngIf="inventoryRows$ | async as rows; else loading">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name / Brand</th>
+        <th>Model</th>
+        <th>Asset Number</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let row of rows">
+        <td>{{ row.type }}</td>
+        <td>{{ row.name }}</td>
+        <td>{{ row.model }}</td>
+        <td>{{ row.assetNumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #loading>
+    <p>Loading inventory...</p>
+  </ng-template>
+</section>
