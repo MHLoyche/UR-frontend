@@ -5,7 +5,7 @@
         "navn": "Emma Jensen",
         "adresse": "Østerbrogade 42",
         "postnummerOgBy": "2100 København Ø",
-        "cprNummer": "140506-1234",
+        "cprNummer": "140506-xxxx",
         "email": "emma.jensen@skole.dk",
         "stamklasse": "2.A"
         },
@@ -14,7 +14,7 @@
         "navn": "Lucas Nielsen",
         "adresse": "Roskildevej 115",
         "postnummerOgBy": "2000 Frederiksberg",
-        "cprNummer": "220407-5678",
+        "cprNummer": "220407-xxxx",
         "email": "lucas.nielsen@skole.dk",
         "stamklasse": "2.B"
         },
@@ -23,7 +23,7 @@
         "navn": "Sofie Hansen",
         "adresse": "Amagerbrogade 88",
         "postnummerOgBy": "2300 København S",
-        "cprNummer": "091208-9012",
+        "cprNummer": "091208-xxxx",
         "email": "sofie.hansen@skole.dk",
         "stamklasse": "3.A"
         },
@@ -32,7 +32,7 @@
         "navn": "Noah Pedersen",
         "adresse": "Nørrebrogade 19",
         "postnummerOgBy": "2200 København N",
-        "cprNummer": "170709-3344",
+        "cprNummer": "170709-xxxx",
         "email": "noah.pedersen@skole.dk",
         "stamklasse": "1.C"
         },
@@ -41,7 +41,7 @@
         "navn": "Freja Madsen",
         "adresse": "Valby Langgade 61",
         "postnummerOgBy": "2500 Valby",
-        "cprNummer": "030610-7788",
+        "cprNummer": "030610-xxxx",
         "email": "freja.madsen@skole.dk",
         "stamklasse": "1.A"
         },
@@ -50,7 +50,7 @@
         "navn": "William Sørensen",
         "adresse": "Jagtvej 126",
         "postnummerOgBy": "2200 København N",
-        "cprNummer": "281104-5566",
+        "cprNummer": "281104-xxxx",
         "email": "william.sorensen@skole.dk",
         "stamklasse": "2.C"
         },
@@ -59,7 +59,7 @@
         "navn": "Ida Larsen",
         "adresse": "Lyngby Hovedgade 14",
         "postnummerOgBy": "2800 Kongens Lyngby",
-        "cprNummer": "120905-8899",
+        "cprNummer": "120905-xxxx",
         "email": "ida.larsen@skole.dk",
         "stamklasse": "3.B"
         },
@@ -68,7 +68,7 @@
         "navn": "Oliver Rasmussen",
         "adresse": "H.C. Andersens Boulevard 9",
         "postnummerOgBy": "1553 København V",
-        "cprNummer": "241006-1122",
+        "cprNummer": "241006-xxxx",
         "email": "oliver.rasmussen@skole.dk",
         "stamklasse": "2.A"
         }

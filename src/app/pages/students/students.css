@@ -21,12 +21,26 @@
 }
 
 .students-table th {
-	background: #f5f5f5;
+	background: rgba(15, 23, 42, 0.92);
 	font-weight: 600;
+    color: white;
 }
 
 .students-table tr:hover {
 	background: #fafafa;
+}
+
+.view-btn {
+    color: white;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+
+.view-btn:hover {
+    background: rgb(37, 61, 117);
 }
 
 @media (max-width: 900px) {
