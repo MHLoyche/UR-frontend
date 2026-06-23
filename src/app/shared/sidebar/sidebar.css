@@ -6,20 +6,7 @@
     background: rgba(15, 23, 42, 0.92);
     color: #e2e8f0;
     backdrop-filter: blur(10px);
-}
-
-.sidebar-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ffffff;
-}
-
-.sidebar-title {
-    font-size: 1.75rem;
-    font-weight: 700;
+    box-sizing: border-box;
 }
 
 .sidebar-nav {
@@ -44,4 +31,13 @@
 .sidebar-nav a.is-active {
     background: #2563eb;
     color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
 }
