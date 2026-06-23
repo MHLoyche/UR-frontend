@@ -1,0 +1,19 @@
+{
+    "mouse": [
+        {
+        "mus": "optisk",
+        "model": "Logitech M185",
+        "registrationsnummer": "MOU-1001"
+        },
+        {
+        "mus": "alm",
+        "model": "Dell MS116",
+        "registrationsnummer": "MOU-1002"
+        },
+        {
+        "mus": "nej",
+        "model": "",
+        "registrationsnummer": "MOU-1003"
+        }
+  ]
+}

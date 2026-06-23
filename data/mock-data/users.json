@@ -1,0 +1,31 @@
+{
+    "users": [
+        {
+        "elevnummer": "20260001",
+        "navn": "Emma Jensen",
+        "adresse": "Østerbrogade 42",
+        "postnummerOgBy": "2100 København Ø",
+        "cprNummer": "140506-1234",
+        "email": "emma.jensen@skole.dk",
+        "stamklasse": "2.A"
+        },
+        {
+        "elevnummer": "20260002",
+        "navn": "Lucas Nielsen",
+        "adresse": "Roskildevej 115",
+        "postnummerOgBy": "2000 Frederiksberg",
+        "cprNummer": "220407-5678",
+        "email": "lucas.nielsen@skole.dk",
+        "stamklasse": "2.B"
+        },
+        {
+        "elevnummer": "20260003",
+        "navn": "Sofie Hansen",
+        "adresse": "Amagerbrogade 88",
+        "postnummerOgBy": "2300 København S",
+        "cprNummer": "091208-9012",
+        "email": "sofie.hansen@skole.dk",
+        "stamklasse": "3.A"
+        }
+  ]
+}

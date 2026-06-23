@@ -1,0 +1,19 @@
+{
+    "computers": [
+        {
+            "fabrikant": "DELL",
+            "model": "Inspiron 9300",
+            "computernummer": "PC-0722"
+        },
+        {
+            "fabrikant": "HP",
+            "model": "EliteBook 840 G8",
+            "computernummer": "PC-0723"
+        },
+        {
+            "fabrikant": "Lenovo",
+            "model": "ThinkPad T14",
+            "computernummer": "PC-0724"
+        }
+  ]
+}
