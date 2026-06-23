@@ -6,7 +6,7 @@
 
 .layout-body {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   margin-top: -120px;
   position: relative;
   z-index: 2;
@@ -20,6 +20,7 @@ app-header {
 
 app-sidebar {
   flex: 0 0 240px;
+  align-self: stretch;
   position: relative;
   z-index: 3;
 }

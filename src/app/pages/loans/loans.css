@@ -1,0 +1,84 @@
+/* Loans list styling mirrors the inventory and students pages. */
+.loans {
+	padding: 1.5rem;
+}
+
+.loans-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.add-loan-btn {
+    color: white;
+    background: rgba(15, 30, 128, 0.92);
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    margin-right: 3rem;
+    font-size: 1rem;
+}
+
+.loans h1 {
+	margin: 0 0 1rem;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.loans-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+.loans-table th,
+.loans-table td {
+	padding: 0.75rem 1rem;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.loans-table th {
+	background: rgba(15, 23, 42, 0.92);
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.loans-table tr:hover {
+	background: #fafafa;
+}
+
+.edit-btn {
+    color: white;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+
+.edit-btn:hover {
+    background: rgb(37, 61, 117);
+}
+
+
+@media (max-width: 900px) {
+	.loans {
+		padding: 1rem;
+		overflow-x: auto;
+	}
+
+	.loans-table {
+		min-width: 800px;
+	}
+}

@@ -1,5 +1,10 @@
 <section class="inventory">
-  <h1>Inventory</h1>
+    <div class="inventory-header">
+        <h1>Inventory</h1>
+        <button class="add-item-btn">Add Item</button>
+    </div>
+
+  <input class="search-input" type="text" placeholder="Search inventory..."/>
 
   <table class="inventory-table" *ngIf="inventoryRows$ | async as rows; else loading">
     <thead>

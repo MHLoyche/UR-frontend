@@ -1,1 +1,38 @@
-<p>loans works!</p>
+<section class="loans">
+	<div class="loans-header">
+        <h1>Loans</h1>
+        <button class="add-loan-btn">Add Loan</button>
+    </div>
+
+    <input class="search-input" type="text" placeholder="Search loans..."/>
+
+	<table class="loans-table" *ngIf="loans$ | async as loans; else loading">
+		<thead>
+			<tr>
+				<th>Student Number</th>
+				<th>Computer Number</th>
+				<th>Mouse Number</th>
+				<th>Loan Date</th>
+				<th>Expiry Date</th>
+                <th>Edit</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr *ngFor="let loan of loans">
+				<td>{{ loan.elevnummer }}</td>
+				<td>{{ loan.computernummer }}</td>
+				<td>{{ loan.registrationsnummer }}</td>
+				<td>{{ loan.udlaansdato }}</td>
+				<td>{{ loan.udloebsdato }}</td>
+                <td>
+                    <button class="edit-btn">Edit</button>
+                </td>
+			</tr>
+		</tbody>
+	</table>
+
+	<ng-template #loading>
+		<p>Loading loans...</p>
+	</ng-template>
+</section>

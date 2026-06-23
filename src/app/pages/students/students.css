@@ -3,8 +3,36 @@
 	padding: 1.5rem;
 }
 
+.students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.add-student-btn {
+    color: white;
+    background: rgba(15, 30, 128, 0.92);
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    margin-right: 3rem;
+    font-size: 1rem;
+}
+
 .students h1 {
 	margin: 0 0 1rem;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 .students-table {
