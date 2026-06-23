@@ -14,7 +14,8 @@
 				<th>Mouse Number</th>
 				<th>Loan Date</th>
 				<th>Expiry Date</th>
-                <th>Edit</th>
+				<th>Returned</th>
+				<th>Edit</th>
 			</tr>
 		</thead>
 
@@ -25,9 +26,10 @@
 				<td>{{ loan.registrationsnummer }}</td>
 				<td>{{ loan.udlaansdato }}</td>
 				<td>{{ loan.udloebsdato }}</td>
-                <td>
-                    <button class="edit-btn">Edit</button>
-                </td>
+				<td>{{ loan.afleveret ? 'Yes' : 'No' }}</td>
+				<td>
+					<button class="edit-btn">Edit</button>
+				</td>
 			</tr>
 		</tbody>
 	</table>

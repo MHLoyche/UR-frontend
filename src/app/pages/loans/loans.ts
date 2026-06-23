@@ -9,6 +9,7 @@ export interface LoanJson {
   registrationsnummer: string;
   udlaansdato: string;
   udloebsdato: string;
+  afleveret: boolean;
 }
 
 type LoansResponse = {
