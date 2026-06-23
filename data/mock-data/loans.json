@@ -4,43 +4,49 @@
 			"elevnummer": "20260001",
 			"computernummer": "PC-0722",
 			"registrationsnummer": "MOU-1001",
-			"udlånsdato": "2026-06-01",
-			"udløbsdato": "2026-06-15"
+			"udlaansdato": "2026-06-01",
+			"udloebsdato": "2026-06-15",
+            "afleveret": true
 		},
 		{
 			"elevnummer": "20260002",
 			"computernummer": "PC-0723",
 			"registrationsnummer": "MOU-1002",
-			"udlånsdato": "2026-06-02",
-			"udløbsdato": "2026-06-16"
+			"udlaansdato": "2026-06-02",
+			"udloebsdato": "2026-06-16",
+            "afleveret": false
 		},
 		{
 			"elevnummer": "20260003",
 			"computernummer": "PC-0724",
 			"registrationsnummer": "MOU-1003",
-			"udlånsdato": "2026-06-03",
-			"udløbsdato": "2026-06-17"
+			"udlaansdato": "2026-06-03",
+			"udloebsdato": "2026-06-17",
+            "afleveret": false
 		},
 		{
 			"elevnummer": "20260004",
 			"computernummer": "PC-0725",
 			"registrationsnummer": "MOU-1004",
-			"udlånsdato": "2026-06-04",
-			"udløbsdato": "2026-06-18"
+			"udlaansdato": "2026-06-04",
+			"udloebsdato": "2026-06-18",
+            "afleveret": false
 		},
 		{
 			"elevnummer": "20260005",
 			"computernummer": "PC-0726",
 			"registrationsnummer": "MOU-1005",
-			"udlånsdato": "2026-06-05",
-			"udløbsdato": "2026-06-19"
+			"udlaansdato": "2026-06-05",
+			"udloebsdato": "2026-06-19",
+            "afleveret": false
 		},
 		{
 			"elevnummer": "20260006",
 			"computernummer": "PC-0727",
 			"registrationsnummer": "MOU-1006",
-			"udlånsdato": "2026-06-06",
-			"udløbsdato": "2026-06-20"
+			"udlaansdato": "2026-06-06",
+			"udloebsdato": "2026-06-20",
+            "afleveret": false
 		}
 	]
 }
