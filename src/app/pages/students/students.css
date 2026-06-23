@@ -1,0 +1,41 @@
+/* Students list styling mirrors the inventory table layout. */
+.students {
+	padding: 1.5rem;
+}
+
+.students h1 {
+	margin: 0 0 1rem;
+}
+
+.students-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+.students-table th,
+.students-table td {
+	padding: 0.75rem 1rem;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.students-table th {
+	background: #f5f5f5;
+	font-weight: 600;
+}
+
+.students-table tr:hover {
+	background: #fafafa;
+}
+
+@media (max-width: 900px) {
+	.students {
+		padding: 1rem;
+		overflow-x: auto;
+	}
+
+	.students-table {
+		min-width: 900px;
+	}
+}
