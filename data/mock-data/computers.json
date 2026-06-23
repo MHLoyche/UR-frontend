@@ -14,6 +14,36 @@
             "fabrikant": "Lenovo",
             "model": "ThinkPad T14",
             "computernummer": "PC-0724"
+        },
+        {
+            "fabrikant": "DELL",
+            "model": "Inspiron 9300",
+            "computernummer": "PC-0725"
+        },
+        {
+            "fabrikant": "HP",
+            "model": "EliteBook 840 G8",
+            "computernummer": "PC-0726"
+        },
+        {
+            "fabrikant": "Lenovo",
+            "model": "ThinkPad T14",
+            "computernummer": "PC-0727"
+        },
+        {
+            "fabrikant": "DELL",
+            "model": "Inspiron 9300",
+            "computernummer": "PC-0728"
+        },
+        {
+            "fabrikant": "HP",
+            "model": "EliteBook 840 G8",
+            "computernummer": "PC-0729"
+        },
+        {
+            "fabrikant": "Lenovo",
+            "model": "ThinkPad T14",
+            "computernummer": "PC-0730"
         }
   ]
 }

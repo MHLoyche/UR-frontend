@@ -11,9 +11,29 @@
         "registrationsnummer": "MOU-1002"
         },
         {
+        "mus": "optisk",
+        "model": "Logitech M185",
+        "registrationsnummer": "MOU-1003"
+        },
+        {
+        "mus": "alm",
+        "model": "Dell MS116",
+        "registrationsnummer": "MOU-1004"
+        },
+        {
+        "mus": "optisk",
+        "model": "Logitech M185",
+        "registrationsnummer": "MOU-1005"
+        },
+        {
+        "mus": "alm",
+        "model": "Dell MS116",
+        "registrationsnummer": "MOU-1006"
+        },
+        {
         "mus": "nej",
         "model": "",
-        "registrationsnummer": "MOU-1003"
+        "registrationsnummer": ""
         }
-  ]
+    ]
 }
