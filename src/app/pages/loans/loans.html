@@ -15,6 +15,7 @@
 				<th>Loan Date</th>
 				<th>Expiry Date</th>
 				<th>Returned</th>
+                <th>Overdue</th>
 				<th>Edit</th>
 			</tr>
 		</thead>
@@ -27,6 +28,7 @@
 				<td>{{ loan.udlaansdato }}</td>
 				<td>{{ loan.udloebsdato }}</td>
 				<td>{{ loan.afleveret ? 'Yes' : 'No' }}</td>
+				<td>{{ loan.overdue ? 'Yes' : 'No' }}</td>
 				<td>
 					<button class="edit-btn">Edit</button>
 				</td>

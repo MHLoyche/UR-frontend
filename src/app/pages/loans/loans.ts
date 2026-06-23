@@ -12,6 +12,10 @@ export interface LoanJson {
   afleveret: boolean;
 }
 
+export interface LoanRow extends LoanJson {
+  overdue: boolean;
+}
+
 type LoansResponse = {
   loans: LoanJson[];
 };
@@ -25,8 +29,14 @@ type LoansResponse = {
 })
 export class Loans {
   private readonly http = inject(HttpClient);
+  private readonly today = new Date().toISOString().slice(0, 10);
 
   readonly loans$ = this.http.get<LoansResponse>('data/mock-data/loans.json').pipe(
-    map(response => response.loans)
+    map(response =>
+      response.loans.map((loan): LoanRow => ({
+        ...loan,
+        overdue: !loan.afleveret && this.today > loan.udloebsdato,
+      }))
+    )
   );
 }
