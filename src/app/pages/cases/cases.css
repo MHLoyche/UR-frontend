@@ -1,4 +1,4 @@
-.cases-section {
+.cases {
   padding: 1.5rem;
 }
 
@@ -24,6 +24,14 @@
     margin: 0 0 1rem;
 }
 
+.search-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
 .search-input {
     padding: 0.5rem 1rem;
     border: 1px solid rgba(15, 23, 42, 0.92);
@@ -31,7 +39,27 @@
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-    margin-bottom: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.filter-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 0.92);
+}
+
+.resolved-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.92);
+    border-radius: 0.75rem;
+    width: 15rem;
+    max-width: 200px;
+    box-sizing: border-box;
 }
 
 .cases-div {
@@ -72,6 +100,10 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 0.75rem;
+}
+
+.view-btn:hover {
+    background: rgb(37, 61, 117);
 }
 
 .resolved {

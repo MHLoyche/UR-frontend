@@ -3,47 +3,56 @@
         {
             "fabrikant": "DELL",
             "model": "Inspiron 9300",
-            "computernummer": "PC-0722"
+            "computernummer": "PC-0722",
+            "udlaant": false
         },
         {
             "fabrikant": "HP",
             "model": "EliteBook 840 G8",
-            "computernummer": "PC-0723"
+            "computernummer": "PC-0723",
+            "udlaant": true
         },
         {
             "fabrikant": "Lenovo",
             "model": "ThinkPad T14",
-            "computernummer": "PC-0724"
+            "computernummer": "PC-0724",
+            "udlaant": true
         },
         {
             "fabrikant": "DELL",
             "model": "Inspiron 9300",
-            "computernummer": "PC-0725"
+            "computernummer": "PC-0725",
+            "udlaant": true
         },
         {
             "fabrikant": "HP",
             "model": "EliteBook 840 G8",
-            "computernummer": "PC-0726"
+            "computernummer": "PC-0726",
+            "udlaant": true
         },
         {
             "fabrikant": "Lenovo",
             "model": "ThinkPad T14",
-            "computernummer": "PC-0727"
+            "computernummer": "PC-0727",
+            "udlaant": true
         },
         {
             "fabrikant": "DELL",
             "model": "Inspiron 9300",
-            "computernummer": "PC-0728"
+            "computernummer": "PC-0728",
+            "udlaant": true
         },
         {
             "fabrikant": "HP",
             "model": "EliteBook 840 G8",
-            "computernummer": "PC-0729"
+            "computernummer": "PC-0729",
+            "udlaant": false
         },
         {
             "fabrikant": "Lenovo",
             "model": "ThinkPad T14",
-            "computernummer": "PC-0730"
+            "computernummer": "PC-0730",
+            "udlaant": false
         }
   ]
 }

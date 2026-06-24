@@ -33,6 +33,7 @@ export class Inventory {
           name: computer.fabrikant,
           model: computer.model,
           assetNumber: computer.computernummer,
+          availability: computer.udlaant,
         })
       ),
 
@@ -42,6 +43,7 @@ export class Inventory {
           name: mouse.mus,
           model: mouse.model || 'N/A',
           assetNumber: mouse.registrationsnummer,
+          availability: mouse.udlaant,
         })
       ),
     ])

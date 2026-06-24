@@ -4,7 +4,18 @@
         <button class="new-case-btn">New Case</button>
     </div>
 
-    <input class="search-input" type="text" placeholder="Search cases..."/>
+    <div class="search-container">
+        <input class="search-input" type="text" placeholder="Search cases..."/>
+
+        <div class="filter-group">
+			<label for="resolved-select">Resolved Filter</label>
+			<select id="resolved-select" class="resolved-select">
+				<option value="">All</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+		</div>
+    </div>
 
 	<table class="cases-table" *ngIf="cases$ | async as cases; else loading">
 		<thead>

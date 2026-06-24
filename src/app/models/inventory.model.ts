@@ -3,4 +3,5 @@ export interface InventoryRow {
   name: string;
   model: string;
   assetNumber: string;
+  availability: boolean;
 }

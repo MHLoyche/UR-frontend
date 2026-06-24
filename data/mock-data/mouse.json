@@ -3,37 +3,38 @@
         {
         "mus": "optisk",
         "model": "Logitech M185",
-        "registrationsnummer": "MOU-1001"
+        "registrationsnummer": "MOU-1001",
+        "udlaant": false
         },
         {
         "mus": "alm",
         "model": "Dell MS116",
-        "registrationsnummer": "MOU-1002"
+        "registrationsnummer": "MOU-1002",
+        "udlaant": true
         },
         {
         "mus": "optisk",
         "model": "Logitech M185",
-        "registrationsnummer": "MOU-1003"
+        "registrationsnummer": "MOU-1003",
+        "udlaant": true
         },
         {
         "mus": "alm",
         "model": "Dell MS116",
-        "registrationsnummer": "MOU-1004"
+        "registrationsnummer": "MOU-1004",
+        "udlaant": true
         },
         {
         "mus": "optisk",
         "model": "Logitech M185",
-        "registrationsnummer": "MOU-1005"
+        "registrationsnummer": "MOU-1005",
+        "udlaant": true
         },
         {
         "mus": "alm",
         "model": "Dell MS116",
-        "registrationsnummer": "MOU-1006"
-        },
-        {
-        "mus": "nej",
-        "model": "",
-        "registrationsnummer": ""
+        "registrationsnummer": "MOU-1006",
+        "udlaant": true
         }
     ]
 }
