@@ -1,0 +1,25 @@
+.cases-section {
+  padding: 1.5rem;
+}
+
+.cases-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.new-case-btn {
+    color: white;
+    background: rgba(15, 30, 128, 0.92);
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    margin-right: 3rem;
+    font-size: 1rem;
+}
+
+.cases-header h1 {
+  margin: 0 0 1rem;
+}

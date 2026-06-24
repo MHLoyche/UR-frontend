@@ -11,7 +11,8 @@ export const routes: Routes = [
             { path: 'dashboard', loadComponent: () => import('./pages/dashboard/dashboard').then(m => m.Dashboard) },
             { path: 'loans', loadComponent: () => import('./pages/loans/loans').then(m => m.Loans) },
             { path: 'inventory', loadComponent: () => import('./pages/inventory/inventory').then(m => m.Inventory) },
-            { path: 'students', loadComponent: () => import('./pages/students/students').then(m => m.Students) }
+            { path: 'students', loadComponent: () => import('./pages/students/students').then(m => m.Students) },
+            { path: 'cases', loadComponent: () => import('./pages/cases/cases').then(m => m.Cases) }
         ]
     }
 ];
