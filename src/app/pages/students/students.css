@@ -21,6 +21,11 @@
     font-size: 1rem;
 }
 
+.add-student-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
 .students h1 {
 	margin: 0 0 1rem;
 }
