@@ -3,4 +3,5 @@ export interface DashboardCounts {
   mice: number;
   activeLoans: number;
   overdueLoans: number;
+  totalStudents: number;
 }

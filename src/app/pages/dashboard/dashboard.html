@@ -3,33 +3,76 @@
 <section class="div-container">
     <div id="inventory-div" class="stat-card">
         <h2>Inventory Overview</h2>
-
-        <div class="inventory-stats">
-            <span class="stat-label">Computers:</span>
-            <span class="stat-value">{{ counts().computers }}</span>
+        <div class="inventory-content">
+            <div class="inventory-item">
+                <span class="material-symbols-outlined dashboard-icon">
+                    computer
+                </span>
+                <div class="dashboard-number">
+                    {{ counts().computers }}
+                </div>
+                <div class="dashboard-label">
+                    Computers
+                </div>
+            </div>
+            <div class="inventory-item">
+                <span class="material-symbols-outlined dashboard-icon">
+                    mouse
+                </span>
+                <div class="dashboard-number">
+                    {{ counts().mice }}
+                </div>
+                <div class="dashboard-label">
+                    Mice
+                </div>
+            </div>
         </div>
-        <div class="inventory-stats">
-            <span class="stat-label">Mice:</span>
-            <span class="stat-value">{{ counts().mice }}</span>
-        </div>
+        <button class="dashboard-btn">
+        View Inventory
+        </button>
     </div>
-    
+
     <div id="loans-div" class="stat-card">
         <h2>Loans Overview</h2>
-
-        <div class="loans-stats">
-            <span class="stat-label">Active Loans:</span>
-            <span class="stat-value">{{ counts().activeLoans }}</span> 
-            <span class="stat-label">Overdue Loans:</span>
-            <span class="stat-value">{{ counts().overdueLoans }}</span>
+        <div class="loan-content">
+            <div class="loan-item">
+                <div class="loan-circle active-circle">
+                    {{ counts().activeLoans }}
+                </div>
+                <div class="dashboard-label">
+                    Active Loans
+                </div>
+            </div>
+            <div class="loan-item">
+                <div class="loan-circle overdue-circle">
+                    {{ counts().overdueLoans }}
+                </div>
+                <div class="dashboard-label">
+                    Overdue Loans
+                </div>
+            </div>
         </div>
+        <button class="dashboard-btn">
+            View Loans
+        </button>
     </div>
 
     <div id="cases-div" class="stat-card">
         <h2>Cases</h2>
+        <button class="dashboard-btn">
+            View Cases
+        </button>
     </div>
 
     <div id="students-div" class="stat-card">
         <h2>Students</h2>
+
+        <div class="stat-row">
+            <span class="stat-label">Total Students:</span>
+            <span class="stat-value">{{ counts().totalStudents }}</span>
+        </div>
+        <button class="dashboard-btn">
+            View Students
+        </button>
     </div> 
 </section>

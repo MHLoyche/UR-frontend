@@ -7,6 +7,7 @@ import { ComputerResponse } from '../../models/computer.model';
 import { DashboardCounts } from '../../models/dashboard.model';
 import { LoanResponse } from '../../models/loan.model';
 import { MouseResponse } from '../../models/mouse.model';
+import { StudentsResponse } from '../../models/student.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -33,8 +34,12 @@ export class Dashboard {
       loans: this.http.get<LoanResponse>(
         '/data/mock-data/loans.json'
       ),
+
+      students: this.http.get<StudentsResponse>(
+        '/data/mock-data/users.json'
+      ),
     }).pipe(
-      map(({ computers, mice, loans }): DashboardCounts => ({
+      map(({ computers, mice, loans, students }): DashboardCounts => ({
         computers: computers.computers.length,
 
         mice: mice.mouse.length,
@@ -48,6 +53,8 @@ export class Dashboard {
             !loan.afleveret &&
             this.today > loan.udloebsdato
         ).length,
+
+        totalStudents: students.users.length,
       }))
     ),
 
@@ -57,6 +64,7 @@ export class Dashboard {
         mice: 0,
         activeLoans: 0,
         overdueLoans: 0,
+        totalStudents: 0,
       },
     }
   );
