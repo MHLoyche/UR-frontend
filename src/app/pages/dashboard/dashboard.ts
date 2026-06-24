@@ -48,7 +48,16 @@ export class Dashboard {
       map(({ computers, mice, loans, students, cases }): DashboardCounts => ({
         computers: computers.computers.length,
 
+        
+        availableComputers: computers.computers.filter(
+          computer => !computer.udlaant
+        ).length,
+
         mice: mice.mouse.length,
+
+        availableMice: mice.mouse.filter(
+          mouse => !mouse.udlaant
+        ).length,
 
         activeLoans: loans.loans.filter(
           loan => !loan.afleveret
@@ -80,6 +89,8 @@ export class Dashboard {
         totalCases: 0,
         openCases: 0,
         closedCases: 0,
+        availableComputers: 0,
+        availableMice: 0,
       },
     }
   );

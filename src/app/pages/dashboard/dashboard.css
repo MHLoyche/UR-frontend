@@ -79,6 +79,11 @@
     color: white;
 }
 
+.dashboard-availability {
+    font-size: 1.2rem;
+    color: #89d389;
+}
+
 .loan-circle {
     width: 110px;
     height: 110px;

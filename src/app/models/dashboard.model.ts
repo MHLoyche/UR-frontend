@@ -10,4 +10,7 @@ export interface DashboardCounts {
   totalCases: number;
   openCases: number;
   closedCases: number;
+
+  availableComputers: number;
+  availableMice: number;
 }

@@ -14,6 +14,9 @@
                 <div class="dashboard-label">
                     Computers
                 </div>
+                <div class="dashboard-availability">
+                    {{ counts().availableComputers }} available
+                </div>
             </div>
             <div class="inventory-item">
                 <span class="material-symbols-outlined dashboard-icon">
@@ -25,10 +28,13 @@
                 <div class="dashboard-label">
                     Mice
                 </div>
+                <div class="dashboard-availability">
+                    {{ counts().availableMice }} available
+                </div>
             </div>
         </div>
         <a class="dashboard-btn" routerLink="/inventory">
-        View Inventory
+            View Inventory
         </a>
     </div>
 
