@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "casenummer": "CASE-0001",
+      "elevnummer": "20260002",
+      "casekategori": "OVERDUE_LOAN",
+      "oprettelsesdato": "2026-06-17",
+      "beskrivelse": "Loan period exceeded. Student has not returned PC-0723 and MOU-1002.",
+      "medarbejderid": "SUP-001",
+      "computernummer": "PC-0723",
+      "registrationsnummer": "MOU-1002",
+      "afklaret": false
+    },
+    {
+      "casenummer": "CASE-0002",
+      "elevnummer": "20260005",
+      "casekategori": "OVERDUE_LOAN",
+      "oprettelsesdato": "2026-06-20",
+      "beskrivelse": "Loan period exceeded. Student has not returned PC-0726 and MOU-1005.",
+      "medarbejderid": "SUP-001",
+      "computernummer": "PC-0726",
+      "registrationsnummer": "MOU-1005",
+      "afklaret": false
+    },
+    {
+      "casenummer": "CASE-0003",
+      "elevnummer": "20260006",
+      "casekategori": "OVERDUE_LOAN",
+      "oprettelsesdato": "2026-06-21",
+      "beskrivelse": "Loan period exceeded. Student has not returned PC-0727 and MOU-1006.",
+      "medarbejderid": "SUP-002",
+      "computernummer": "PC-0727",
+      "registrationsnummer": "MOU-1006",
+      "afklaret": false
+    },
+    {
+      "casenummer": "CASE-0004",
+      "elevnummer": "20260003",
+      "casekategori": "DAMAGED_COMPUTER",
+      "oprettelsesdato": "2026-07-01",
+      "beskrivelse": "Student reported that the laptop screen is flickering and occasionally turns black.",
+      "medarbejderid": "SUP-003",
+      "computernummer": "PC-0724",
+      "registrationsnummer": "MOU-1003",
+      "afklaret": false
+    },
+    {
+      "casenummer": "CASE-0005",
+      "elevnummer": "20260007",
+      "casekategori": "DAMAGED_MOUSE",
+      "oprettelsesdato": "2026-07-02",
+      "beskrivelse": "Student reported that the mouse scroll wheel is defective.",
+      "medarbejderid": "SUP-002",
+      "computernummer": "N/A",
+      "registrationsnummer": "MOU-1001",
+      "afklaret": true
+    }
+  ]
+}
