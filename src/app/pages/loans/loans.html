@@ -48,7 +48,9 @@
 				<td>{{ loan.registrationsnummer }}</td>
 				<td>{{ loan.udlaansdato }}</td>
 				<td>{{ loan.udloebsdato }}</td>
-				<td>{{ loan.afleveret ? 'Yes' : 'No' }}</td>
+				<td [ngClass]="loan.afleveret ? 'returned-yes' : 'returned-no'">
+					{{ loan.afleveret ? 'Yes' : 'No' }}
+				</td>
 				<td [ngClass]="loan.overdue ? 'overdue-yes' : 'overdue-no'">
 					{{ loan.overdue ? 'Yes' : 'No' }}
 				</td>

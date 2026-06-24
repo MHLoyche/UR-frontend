@@ -67,7 +67,7 @@
     border-radius: 0.75rem;
 }
 
-.view-btn:hover {
+.view-btn:hover, .contact-btn:hover {
     background: rgb(37, 61, 117);
 }
 
