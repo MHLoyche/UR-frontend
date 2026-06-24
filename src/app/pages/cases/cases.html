@@ -1,10 +1,48 @@
-<section class="cases-section">
-    <div class="cases-header">
+<section class="cases">
+	<div class="cases-header">
         <h1>Cases</h1>
         <button class="new-case-btn">New Case</button>
     </div>
 
-    <div class="cases-div">
-        
-    </div>
+    <input class="search-input" type="text" placeholder="Search cases..."/>
+
+	<table class="cases-table" *ngIf="cases$ | async as cases; else loading">
+		<thead>
+			<tr>
+				<th>Case Number</th>
+				<th>Student Number</th>
+				<th>Category</th>
+				<th>Created</th>
+				<th>Description</th>
+				<th>Worker</th>
+				<th>Computer ID</th>
+                <th>Mouse ID</th>
+                <th>Resolved</th>
+                <th>View</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr *ngFor="let case of cases">
+				<td>{{ case.casenummer }}</td>
+				<td>{{ case.elevnummer }}</td>
+				<td>{{ case.casekategori }}</td>
+				<td>{{ case.oprettelsesdato }}</td>
+				<td class="description-cell">
+                    {{ case.beskrivelse }}
+                </td>
+                <td>{{ case.medarbejderid }}</td>
+				<td>{{ case.computernummer }}</td>
+				<td>{{ case.registrationsnummer }}</td>
+                <td [class.resolved]="case.afklaret" [class.unresolved]="!case.afklaret">
+                    {{ case.afklaret ? 'Yes' : 'No' }}</td>
+				<td>
+                    <button class="view-btn">View</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<ng-template #loading>
+		<p>Loading cases...</p>
+	</ng-template>
 </section>

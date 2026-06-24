@@ -4,10 +4,6 @@
     gap: 1rem;
 }
 
-h2, p, span {
-    color: white;
-}
-
 .stat-card {
     display: flex;
     flex-direction: column;
@@ -16,6 +12,7 @@ h2, p, span {
     border-radius: 12px;
     min-height: 220px;
     padding: 1.75rem;
+    color: white;
 }
 
 .stat-row {
@@ -26,15 +23,13 @@ h2, p, span {
     font-size: 1rem;
 }
 
-.stat-value {
+.stat-value, .stat-value-warning {
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 .stat-value-warning {
     color:  #ff5f5f;
-    font-weight: 700;
-    font-size: 1.5rem;
 }
 
 .dashboard-btn {
@@ -51,8 +46,8 @@ h2, p, span {
 }
 
 .dashboard-btn:hover {
-    background: rgba(15, 30, 128, 0.92);
     opacity: 0.8;
+    transform: translateY(-1px);
 }
 
 .inventory-content, .loan-content {
@@ -62,7 +57,7 @@ h2, p, span {
     margin-top: 2rem;
 }
 
-.inventory-item, .loan-item {
+.inventory-item, .loan-item, .case-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,4 +97,38 @@ h2, p, span {
 
 .overdue-circle {
     background: #bb1f1f;
+}
+
+.cases-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.case-status {
+    display: flex;
+    gap: 1rem;
+}
+
+.case-pill {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem 1rem;
+    border-radius: 999px;
+    color: white;
+}
+
+.open-pill {
+    background: #f59e0b;
+}
+
+.closed-pill {
+    background: #16a34a;
+}
+
+.case-pill strong {
+    font-size: 1.1rem;
 }

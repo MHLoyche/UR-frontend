@@ -60,17 +60,36 @@
     <div id="cases-div" class="stat-card">
         <h2>Case Overview</h2>
 
-        <div class="stat-row">
-            <span class="stat-label">Total Cases:</span>
-            <span class="stat-value">0</span>
-        </div>
-        <div class="stat-row">
-            <span class="stat-label">Open Cases:</span>
-            <span class="stat-value">0</span>
-        </div>
-        <div class="stat-row">
-            <span class="stat-label">Closed Cases:</span>
-            <span class="stat-value">0</span>
+        <div class="cases-content">
+            <div class="case-main">
+                <span class="material-symbols-outlined dashboard-icon">
+                    support_agent
+                </span>
+                <div class="dashboard-number">
+                    {{ counts().totalCases }}
+                </div>
+                <div class="dashboard-label">
+                    Total Cases
+                </div>
+            </div>
+            <div class="case-status">
+                <div class="case-pill open-pill">
+                    <span>
+                        Open
+                    </span>
+                    <strong>
+                        {{ counts().openCases }}
+                    </strong>
+                </div>
+                <div class="case-pill closed-pill">
+                    <span>
+                        Closed
+                    </span>
+                    <strong>
+                        {{ counts().closedCases }}
+                    </strong>
+                </div>
+            </div>
         </div>
         <a class="dashboard-btn" routerLink="/cases">
             View Cases
