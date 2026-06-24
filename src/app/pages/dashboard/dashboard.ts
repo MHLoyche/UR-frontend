@@ -1,30 +1,12 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { forkJoin, map } from 'rxjs';
 
-interface ComputersResponse {
-  computers: Array<unknown>;
-}
-
-interface MouseResponse {
-  mouse: Array<unknown>;
-}
-
-interface DashboardCounts {
-  computers: number;
-  mice: number;
-  activeLoans: number;
-  overdueLoans: number;
-}
-
-interface ActiveLoanResponse {
-  loans: Array<unknown>;
-}
-
-interface OverdueLoanResponse {
-  loans: Array<unknown>;
-}
+import { ComputerResponse } from '../../models/computer.model';
+import { DashboardCounts } from '../../models/dashboard.model';
+import { LoanResponse } from '../../models/loan.model';
+import { MouseResponse } from '../../models/mouse.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -33,23 +15,49 @@ interface OverdueLoanResponse {
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
+
 export class Dashboard {
   private readonly http = inject(HttpClient);
+  private readonly today = new Date().toISOString().slice(0, 10);
 
   readonly counts = toSignal(
     forkJoin({
-      computers: this.http.get<ComputersResponse>('/data/mock-data/computers.json'),
-      mice: this.http.get<MouseResponse>('/data/mock-data/mouse.json'),
-      activeLoans: this.http.get<ActiveLoanResponse>('/data/mock-data/loans.json'),
-      overdueLoans: this.http.get<OverdueLoanResponse>('/data/mock-data/loans.json'),
+      computers: this.http.get<ComputerResponse>(
+        '/data/mock-data/computers.json'
+      ),
+
+      mice: this.http.get<MouseResponse>(
+        '/data/mock-data/mouse.json'
+      ),
+
+      loans: this.http.get<LoanResponse>(
+        '/data/mock-data/loans.json'
+      ),
     }).pipe(
-      map(({ computers, mice, activeLoans, overdueLoans }): DashboardCounts => ({
+      map(({ computers, mice, loans }): DashboardCounts => ({
         computers: computers.computers.length,
+
         mice: mice.mouse.length,
-        activeLoans: activeLoans.loans.length,
-        overdueLoans: overdueLoans.loans.length,
+
+        activeLoans: loans.loans.filter(
+          loan => !loan.afleveret
+        ).length,
+
+        overdueLoans: loans.loans.filter(
+          loan =>
+            !loan.afleveret &&
+            this.today > loan.udloebsdato
+        ).length,
       }))
     ),
-    { initialValue: { computers: 0, mice: 0, activeLoans: 0, overdueLoans: 0 } }
+
+    {
+      initialValue: {
+        computers: 0,
+        mice: 0,
+        activeLoans: 0,
+        overdueLoans: 0,
+      },
+    }
   );
 }
