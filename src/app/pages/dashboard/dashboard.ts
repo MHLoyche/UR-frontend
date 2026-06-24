@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { forkJoin, map } from 'rxjs';
+import { RouterLink } from '@angular/router';
 
 import { ComputerResponse } from '../../models/computer.model';
 import { DashboardCounts } from '../../models/dashboard.model';
@@ -12,7 +13,7 @@ import { StudentsResponse } from '../../models/student.model';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

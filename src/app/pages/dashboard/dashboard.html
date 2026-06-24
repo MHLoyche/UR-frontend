@@ -27,9 +27,9 @@
                 </div>
             </div>
         </div>
-        <button class="dashboard-btn">
+        <a class="dashboard-btn" routerLink="/inventory">
         View Inventory
-        </button>
+        </a>
     </div>
 
     <div id="loans-div" class="stat-card">
@@ -52,27 +52,48 @@
                 </div>
             </div>
         </div>
-        <button class="dashboard-btn">
+        <a class="dashboard-btn" routerLink="/loans">
             View Loans
-        </button>
+        </a>
     </div>
 
     <div id="cases-div" class="stat-card">
-        <h2>Cases</h2>
-        <button class="dashboard-btn">
+        <h2>Case Overview</h2>
+
+        <div class="stat-row">
+            <span class="stat-label">Total Cases:</span>
+            <span class="stat-value">0</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Open Cases:</span>
+            <span class="stat-value">0</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Closed Cases:</span>
+            <span class="stat-value">0</span>
+        </div>
+        <a class="dashboard-btn" routerLink="/cases">
             View Cases
-        </button>
+        </a>
     </div>
 
     <div id="students-div" class="stat-card">
-        <h2>Students</h2>
+        <h2>Student Overview</h2>
 
         <div class="stat-row">
             <span class="stat-label">Total Students:</span>
             <span class="stat-value">{{ counts().totalStudents }}</span>
         </div>
-        <button class="dashboard-btn">
+        <div class="stat-row">
+            <span class="stat-label">Students with loans:</span>
+            <span class="stat-value">0</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Blacklisted:</span>
+            <span class="stat-value">0</span>
+        </div>
+        <a class="dashboard-btn" routerLink="/students">
             View Students
-        </button>
+        </a>
     </div> 
 </section>
