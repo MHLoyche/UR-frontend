@@ -6,21 +6,30 @@
 
         <div class="inventory-stats">
             <span class="stat-label">Computers:</span>
-            <span class="stat-value">{{ computersCount }}</span>
+            <span class="stat-value">{{ counts().computers }}</span>
         </div>
         <div class="inventory-stats">
             <span class="stat-label">Mice:</span>
-            <span class="stat-value">{{ miceCount }}</span>
+            <span class="stat-value">{{ counts().mice }}</span>
         </div>
     </div>
     
-    <div id="div2">
-        <p>Dashboard Content 2</p>
+    <div id="loans-div" class="stat-card">
+        <h2>Loans Overview</h2>
+
+        <div class="loans-stats">
+            <span class="stat-label">Active Loans:</span>
+            <span class="stat-value">{{ counts().activeLoans }}</span> 
+            <span class="stat-label">Overdue Loans:</span>
+            <span class="stat-value">{{ counts().overdueLoans }}</span>
+        </div>
     </div>
-    <div id="div3">
-        <p>Dashboard Content 3</p>
+
+    <div id="cases-div" class="stat-card">
+        <h2>Cases</h2>
     </div>
-    <div id="div4">
-        <p>Dashboard Content 4</p>
+
+    <div id="reports-div" class="stat-card">
+        <h2>Reports</h2>
     </div> 
 </section>

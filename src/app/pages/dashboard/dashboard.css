@@ -16,25 +16,29 @@ h2, p, span {
 }
 
 #inventory-div {
-  background: rgba(15, 23, 42, 0.92);
-  border: 1px solid #30324a;
-  margin-right: 0.5rem;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid #30324a;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-#div2 {
+#loans-div {
   background: rgba(15, 23, 42, 0.92);
   border: 1px solid #30324a;
   margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-#div3 {
-  background: rgba(15, 23, 42, 0.92);
-  border: 1px solid #30324a;
-  margin-left: 0.5rem;
-}
-
-#div4 {
+#cases-div {
   background: rgba(15, 23, 42, 0.92);
   border: 1px solid #30324a;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#reports-div {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid #30324a;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
