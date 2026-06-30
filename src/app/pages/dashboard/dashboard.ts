@@ -47,7 +47,6 @@ export class Dashboard {
     }).pipe(
       map(({ computers, mice, loans, students, cases }): DashboardCounts => ({
         computers: computers.computers.length,
-
         
         availableComputers: computers.computers.filter(
           computer => !computer.udlaant
@@ -71,6 +70,26 @@ export class Dashboard {
 
         totalStudents: students.users.length,
 
+        studentsWithLoans:
+          new Set(
+            loans.loans.map(
+              loan => loan.elevnummer
+            )
+          ).size,
+
+        studentsWithoutLoans:
+          students.users.length -
+          new Set(
+            loans.loans.map(
+              loan => loan.elevnummer
+            )
+          ).size,
+          
+        blacklistetStudents:
+          students.users.filter(
+            student => student.blacklistet
+          ).length,
+
         totalCases: cases.cases.length,
         openCases: cases.cases.filter(
           c => !c.afklaret).length,
@@ -86,6 +105,9 @@ export class Dashboard {
         activeLoans: 0,
         overdueLoans: 0,
         totalStudents: 0,
+        studentsWithLoans: 0,
+        studentsWithoutLoans: 0,
+        blacklistetStudents: 0,
         totalCases: 0,
         openCases: 0,
         closedCases: 0,

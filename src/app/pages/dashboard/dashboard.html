@@ -105,17 +105,51 @@
     <div id="students-div" class="stat-card">
         <h2>Student Overview</h2>
 
-        <div class="stat-row">
-            <span class="stat-label">Total Students:</span>
-            <span class="stat-value">{{ counts().totalStudents }}</span>
-        </div>
-        <div class="stat-row">
-            <span class="stat-label">Students with loans:</span>
-            <span class="stat-value">0</span>
-        </div>
-        <div class="stat-row">
-            <span class="stat-label">Blacklisted:</span>
-            <span class="stat-value">0</span>
+        <div class="student-stats">
+            <div class="student-stat-item">
+                <span class="material-symbols-outlined stat-icon blue-text">
+                    groups
+                </span>
+                <span class="student-stat-label">
+                    Total Students
+                </span>
+                <span class="student-stat-value blue-text">
+                    {{ counts().totalStudents }}
+                </span>
+            </div>
+            <div class="student-stat-item">
+                <span class="material-symbols-outlined stat-icon green-text">
+                    how_to_reg
+                </span>
+                <span class="student-stat-label">
+                    Students with loans
+                </span>
+                <span class="student-stat-value green-text">
+                    {{ counts().studentsWithLoans }}
+                </span>
+            </div>
+            <div class="student-stat-item">
+                <span class="material-symbols-outlined stat-icon yellow-text">
+                    person_off
+                </span>
+                <span class="student-stat-label">
+                    Students without loans
+                </span>
+                <span class="student-stat-value yellow-text">
+                    {{ counts().studentsWithoutLoans }}
+                </span>
+            </div>
+            <div class="student-stat-item">
+                <span class="material-symbols-outlined stat-icon red-text">
+                    block
+                </span>
+                <span class="student-stat-label">
+                    Blacklisted
+                </span>
+                <span class="student-stat-value red-text">
+                    {{ counts().blacklistetStudents }}
+                </span>
+            </div>
         </div>
         <a class="dashboard-btn" routerLink="/students">
             View Students

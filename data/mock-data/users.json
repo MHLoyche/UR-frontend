@@ -7,7 +7,8 @@
         "postnummerOgBy": "2100 København Ø",
         "cprNummer": "140506-xxxx",
         "email": "emma.jensen@skole.dk",
-        "stamklasse": "2.A"
+        "stamklasse": "2.A",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260002",
@@ -16,7 +17,8 @@
         "postnummerOgBy": "2000 Frederiksberg",
         "cprNummer": "220407-xxxx",
         "email": "lucas.nielsen@skole.dk",
-        "stamklasse": "2.B"
+        "stamklasse": "2.B",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260003",
@@ -25,7 +27,8 @@
         "postnummerOgBy": "2300 København S",
         "cprNummer": "091208-xxxx",
         "email": "sofie.hansen@skole.dk",
-        "stamklasse": "3.A"
+        "stamklasse": "3.A",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260004",
@@ -34,7 +37,8 @@
         "postnummerOgBy": "2200 København N",
         "cprNummer": "170709-xxxx",
         "email": "noah.pedersen@skole.dk",
-        "stamklasse": "1.C"
+        "stamklasse": "1.C",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260005",
@@ -43,7 +47,8 @@
         "postnummerOgBy": "2500 Valby",
         "cprNummer": "030610-xxxx",
         "email": "freja.madsen@skole.dk",
-        "stamklasse": "1.A"
+        "stamklasse": "1.A",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260006",
@@ -52,7 +57,8 @@
         "postnummerOgBy": "2200 København N",
         "cprNummer": "281104-xxxx",
         "email": "william.sorensen@skole.dk",
-        "stamklasse": "2.C"
+        "stamklasse": "2.C",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260007",
@@ -61,7 +67,8 @@
         "postnummerOgBy": "2800 Kongens Lyngby",
         "cprNummer": "120905-xxxx",
         "email": "ida.larsen@skole.dk",
-        "stamklasse": "3.B"
+        "stamklasse": "3.B",
+        "blacklistet": false
         },
         {
         "elevnummer": "20260008",
@@ -70,7 +77,28 @@
         "postnummerOgBy": "1553 København V",
         "cprNummer": "241006-xxxx",
         "email": "oliver.rasmussen@skole.dk",
-        "stamklasse": "2.A"
+        "stamklasse": "2.A",
+        "blacklistet": false
+        },
+        {
+        "elevnummer": "20260009",
+        "navn": "Mia Kristensen",
+        "adresse": "Borgergade 33",
+        "postnummerOgBy": "2100 København Ø",
+        "cprNummer": "150309-xxxx",
+        "email": "mia.kristensen@skole.dk",
+        "stamklasse": "1.B",
+        "blacklistet": true
+        },
+        {
+        "elevnummer": "20260010",
+        "navn": "Liam Johansen",
+        "adresse": "Sønderborgvej 45",
+        "postnummerOgBy": "2100 København Ø",
+        "cprNummer": "110811-xxxx",
+        "email": "liam.johansen@skole.dk",
+        "stamklasse": "3.C",
+        "blacklistet": false
         }
   ]
 }

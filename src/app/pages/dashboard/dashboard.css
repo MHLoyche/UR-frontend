@@ -32,6 +32,8 @@
     color:  #ff5f5f;
 }
 
+/* Dashboard Button Design */
+
 .dashboard-btn {
     margin-top: auto;
     align-self: flex-end;
@@ -50,6 +52,8 @@
     transform: translateY(-1px);
 }
 
+/* Inventory and Loan Design */
+
 .inventory-content, .loan-content {
     display: flex;
     justify-content: space-evenly;
@@ -62,6 +66,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+/*    Icon and text styles for dashboard items */
 
 .dashboard-icon {
     font-size: 6rem;
@@ -84,6 +90,8 @@
     color: #89d389;
 }
 
+/* Loan Circles Design */
+
 .loan-circle {
     width: 110px;
     height: 110px;
@@ -103,6 +111,8 @@
 .overdue-circle {
     background: #bb1f1f;
 }
+
+/* Cases Design */
 
 .cases-content {
     display: flex;
@@ -136,4 +146,60 @@
 
 .case-pill strong {
     font-size: 1.1rem;
+}
+
+/* Student Design */
+.student-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.student-stat-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+}
+
+.student-stat-label {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.student-stat-value {
+    margin-left: auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.blue-text {
+    color: #60a5fa;
+}
+
+.green-text {
+    color: #4ade80;
+}
+
+.yellow-text {
+    color: #fbbf24;
+}
+
+.red-text {
+    color: #f87171;
 }

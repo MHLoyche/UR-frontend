@@ -6,6 +6,9 @@ export interface DashboardCounts {
   overdueLoans: number;
 
   totalStudents: number;
+  studentsWithLoans: number;
+  studentsWithoutLoans: number;
+  blacklistetStudents: number;
 
   totalCases: number;
   openCases: number;

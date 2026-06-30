@@ -6,6 +6,7 @@ export interface Student {
   cprNummer: string;
   email: string;
   stamklasse: string;
+  blacklistet: boolean;
 }
 
 export interface StudentsResponse {
