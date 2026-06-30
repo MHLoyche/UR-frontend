@@ -21,10 +21,10 @@ import { CaseResponse } from '../../models/case.model';
 
 export class Dashboard {
   private readonly http = inject(HttpClient);
-  private readonly today = new Date().toISOString().slice(0, 10);
+  private readonly today = new Date().toISOString().slice(0, 10); 
 
   readonly counts = toSignal(
-    forkJoin({
+    forkJoin({ 
       computers: this.http.get<ComputerResponse>(
         '/data/mock-data/computers.json'
       ),

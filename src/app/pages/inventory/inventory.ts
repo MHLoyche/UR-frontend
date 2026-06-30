@@ -25,7 +25,7 @@ export class Inventory {
     mice: this.http.get<MouseResponse>(
       'data/mock-data/mouse.json'
     ),
-  }).pipe(
+  }).pipe( // jeg bruger spread operatoren (...) til at kombinere de to arrays af computere og mus til et enkelt array af InventoryRow objekter.
     map(({ computers, mice }) => [
       ...computers.computers.map(
         (computer): InventoryRow => ({
